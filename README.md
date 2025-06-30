@@ -66,7 +66,7 @@ Apart from the speed, HOT enjoys an **advantage on memory** compared to most oth
 ## Color Transfer
 The *ColorTransfer* folder contains a Jupyter notebook, `color_transfer.ipynb`, which provides a detailed walkthrough of performing **color transfer** using the **HOT Solver**.
 
-**Key Feature**: The color transfer process leverages a *non-uniform binning strategy* to optimize performance. Refer to the notebook for a complete implementation and step-by-step guide.
+**Key Feature**: The color transfer process leverages a *non-uniform binning strategy* to optimize performance. Additionally, it utilizes the proposed **transport plan recovery algorithm** to reconstruct the transport plan from a reduced model.  Refer to the notebook for a complete implementation and step-by-step guide.
 
 <img src="images/ct.jpg" alt="drawing"> 
 
@@ -75,7 +75,7 @@ On our RTX 4090, we found that the basic vector operations (e.g., vector additio
 
 Consequently, we adopt a heuristic block strategy to manually split the too long vector to make it adapted to the size of L1-cache of the GPU which is 16MB for RTX 4090.
 ```python
-# m, n are height and width of the 2D histograms respectively
+# m, n are rows and columns of the 2D histograms respectively
 # We denote params as N in our manuscript
 params = m * m * n + n * n * m
 if crop_size < 128:
