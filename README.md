@@ -19,14 +19,12 @@ for Optimal Transport Problems         </h1>**
 ## Overview
 HOT is designed to solve 2D optimal transport problems efficiently, formulated as a standard linear programming problem:
 
-[  
-  \begin{equation}\label{model:standLP}
+$$
 \begin{array}{ll}
 \min\limits_{x \in \mathbb{R}^N} & \langle{c}, {x}\rangle  + \delta_{\mathbb{R}_{+}^{N}}(x)\\
          \text { s.t. } &{A} {x}={b}.
 \end{array}
-\end{equation} 
-]
+$$
 
 By leveraging the sparse structure of matrix $A$ for given 2D histogram with $m$ rows and $n$ columns, HOT avoids explicit matrix generation, enhancing computational efficiency.
 
