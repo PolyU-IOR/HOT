@@ -17,7 +17,7 @@ for Optimal Transport Problems         </h1>**
 
 
 ## Overview
-HOT is designed to solve 2D optimal transport problems efficiently, formulated as a standard linear programming problem:
+HOT is designed to solve reduced 2D optimal transport which can be formulated as a standard linear programming problem:
 
 $$
 \begin{array}{ll}
