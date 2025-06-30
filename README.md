@@ -49,11 +49,11 @@ The pipeline of this demo is like following:
 <ol>
 <li>Specify the paths to the two images used for the OT problem.</li>
 <li>Specify the desired crop size of two images.</li>
-<li>Read the images, convert them to grayscale images and perform $\ell_{1}$ normalization$.</li>
+<li>Read the images, convert them to grayscale images and perform $\ell_{1}$ normalization.</li>
 <li>Generate $b$ and $c$.</li>
 <li>Exucute the HOT Solver.</li>
 </ol>
-You can adapt this pipeline to suit your project's needs.
+In most of the cases, you just need to provide the image paths and desired crop size. You can adapt this pipeline to suit your project's needs. 
 
 
 ## Results
