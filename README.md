@@ -13,7 +13,7 @@ for Optimal Transport Problems         </h1>**
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url] -->
 
-**This is the official implementation of the HOT solver, a highly efficient algorithm for solving reduced 2D optimal transport problems.**
+**This is the official implementation of the HOT solver, our paper has been published on ***TPAMI***.**
 
 
 ## Overview
