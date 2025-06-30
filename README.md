@@ -53,7 +53,7 @@ The pipeline of this demo is like following:
 <li>Generate $b$ and $c$.</li>
 <li>Exucute the HOT Solver.</li>
 </ol>
-In most of the cases, you just need to slightly change the image paths and desired crop size in demo.py. You can also adapt this pipeline to suit your project's needs. 
+In most of the cases, you just need to slightly change the image paths and desired crop size in `demo.py`. You can also adapt this pipeline to suit your project's needs. 
 
 
 ## Results
@@ -63,11 +63,14 @@ Apart from the speed, HOT enjoys an **advantage on memory** compared to most oth
 <img src="images/result.png" alt="drawing"> 
 
 
-## Color transfer
+## Color Transfer
+The *ColorTransfer* folder contains a Jupyter notebook, `color_transfer.ipynb`, which provides a detailed walkthrough of performing **color transfer** using the **HOT Solver**.
 
+**Key Feature**: The color transfer process leverages a *non-uniform binning strategy* to optimize performance. Refer to the notebook for a complete implementation and step-by-step guide.
 
+<img src="images/ct.jpg" alt="drawing"> 
 
-## Notation for ADMM and HOT Solver
+## A Heuristic Strategy to Enhance the Performance of HOT Solver
 On our RTX 4090, we found that the basic vector operations (e.g., vector addition, vector subtraction) gradually become a bottleneck as the image resolution increases.
 
 Consequently, we adopt a heuristic block strategy to manually split the too long vector to make it adapted to the size of L1-cache of the GPU which is 16MB for RTX 4090.
