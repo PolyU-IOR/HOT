@@ -13,7 +13,7 @@ for Optimal Transport Problems         </h1>**
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url] -->
 
-**This is the official implementation of the HOT solver. Our paper is published in ***IEEE Transactions on Pattern Analysis and Machine Intelligence***.**
+**This is the official implementation of the HOT solver. Our paper has been published online at ***IEEE Transactions on Pattern Analysis and Machine Intelligence***.**
 
 
 ## Overview
