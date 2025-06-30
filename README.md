@@ -17,7 +17,7 @@ for Optimal Transport Problems         </h1>**
 
 
 ## Overview
-HOT is designed to solve reduced 2D optimal transport which can be formulated as a standard linear programming problem:
+HOT is designed to solve reduced 2D optimal transport problems which can be formulated as a standard linear programming problem:
 
 $$
 \begin{array}{ll}
@@ -59,7 +59,7 @@ You can adapt this pipeline to suit your project's needs.
 ## Results
 The HOT solver runs extremely **fast**! :smile:
 
-Apart from the speed, our method has an **advantage on memory** compared to most other baseline algorithms. :grin:
+Apart from the speed, HOT enjoys an **advantage on memory** compared to most other baseline algorithms. :grin:
 <img src="images/result.png" alt="drawing"> 
 
 
