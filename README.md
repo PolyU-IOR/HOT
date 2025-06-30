@@ -68,11 +68,11 @@ Apart from the speed, HOT enjoys an **advantage on memory** compared to most oth
 
 
 ## Notation for ADMM and HOT Solver
-On our RTX 4090, we found that the four basic vector operations gradually become a bottleneck as the image resolution increases.
+On our RTX 4090, we found that the basic vector operations (e.g., vector addition, vector subtraction) gradually become a bottleneck as the image resolution increases.
 
 Consequently, we adopt a heuristic block strategy to manually split the too long vector to make it adapted to the size of L1-cache of the GPU which is 16MB for RTX 4090.
 ```python
-# m, n are height and width of the image respectively
+# m, n are height and width of the 2D histograms respectively
 # We denote params as N in our manuscript
 params = m * m * n + n * n * m
 if crop_size < 128:
