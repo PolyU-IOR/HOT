@@ -55,7 +55,7 @@ The pipeline of this demo is like following:
 <li>Exucute the HOT Solver.</li>
 </ol>
 
-In most of the cases, you just need to $${\color{blue}slightly change the image paths and desired crop size in demo.py}$$ slightly change the image paths and desired crop size in `demo.py`. You can also adapt this pipeline to suit your project's needs. 
+In most of the cases, you just need to $${\color{blue}\textbf{slightly change the image paths and desired crop size in demo.py}}$$ slightly change the image paths and desired crop size in `demo.py`. You can also adapt this pipeline to suit your project's needs. 
 
 
 ## Results
