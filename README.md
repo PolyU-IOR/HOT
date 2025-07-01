@@ -35,7 +35,8 @@ By leveraging the sparse structure of matrix $A$ for given 2D histogram with $m$
 ## Getting Started
 ### Prerequisites
 
-First, install the necessary packages listed in requirements.txt.
+First, install the necessary packages listed in requirements.txt. For the PyTorch package, we encourage you to visit the 
+<a href="https://pytorch.org/get-started/locally/" title="torch">official PyTorch website</a> to download the version compatible with your CUDA Toolkit.
 
   ```sh
   pip install -r requirements.txt
