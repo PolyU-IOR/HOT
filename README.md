@@ -26,7 +26,7 @@ $$
 \end{array}
 $$
 
-By leveraging the sparse structure of matrix $A$ for given 2D histogram with $m$ rows and $n$ columns, HOT avoids explicit matrix generation, enhancing computational efficiency.
+<!-- By leveraging the sparse structure of matrix $A$ for given 2D histogram with $m$ rows and $n$ columns, HOT avoids explicit matrix generation, enhancing computational efficiency. -->
 
 
 
@@ -55,24 +55,29 @@ The pipeline of this demo is like following:
 <li>Exucute the HOT Solver.</li>
 </ol>
 
-In most of the cases, you only need to $${\color{blue}\textbf{update the image paths and desired crop size in demo.py accordingly}}$$. You can also adapt this pipeline to suit your project's needs. 
+For computing Kantorovich-Wasserstein distance between two images, you only need to $${\color{blue}\textbf{update the image paths and desired crop size in demo.py accordingly}}$$. You can also adapt this pipeline to suit your project's needs. 
 
 
 ## Results
-The HOT solver runs extremely $${\color{red}\textbf{fast}}$$! :smile:
+The HOT solver runs $${\color{red}\textbf{fast}}$$! :smile:
 
-Apart from the speed, HOT enjoys an $${\color{red}\textbf{advantage on memory}}$$ compared to most other baseline algorithms. :grin:
+Apart from the high computational efficiency, HOT also enjoys an $${\color{red}\textbf{advantage on memory}}$$ compared to most other popular algorithms. :grin:
 <img src="images/result.png" alt="drawing"> 
+
+<!-- ## Caution -->
+$${\color{red}\textbf{The experiments were conducted on RTX 4090.}}$$
+<!-- **The experiments were conducted on RTX 4090.** -->
 
 
 ## Color Transfer
 The *ColorTransfer* folder contains a Jupyter notebook, `color_transfer.ipynb`, which provides a detailed walkthrough of performing **color transfer** using the **HOT Solver**.
 
-**Key Feature**: The color transfer process leverages a *non-uniform binning strategy* to optimize performance. Additionally, it utilizes the proposed **transport plan recovery algorithm** to reconstruct the transport plan from a reduced model.  Refer to the notebook for a complete implementation and step-by-step guide.
+<!-- **Key Feature**: The color transfer process leverages a *non-uniform binning strategy* to optimize performance. Additionally, it utilizes the proposed **transport plan recovery algorithm** to reconstruct the transport plan from a reduced model.  Refer to the notebook for a complete implementation and step-by-step guide. -->
+<!-- Refer to the notebook for a complete implementation and step-by-step guide. -->
 
-<img src="images/ct.jpg" alt="drawing"> 
+<img src="images/color_transfer_V3.jpg" alt="drawing"> 
 
-## A Heuristic Strategy to Enhance the Performance of HOT Solver
+<!-- ## A Heuristic Strategy to Enhance the Performance of HOT Solver
 On our RTX 4090, we found that the basic vector operations (e.g., vector addition, vector subtraction) gradually become a bottleneck as the image resolution increases.
 
 Consequently, we adopt a heuristic block strategy to manually split the too long vector to make it adapted to the size of L1-cache of the GPU which is 16MB for RTX 4090.
@@ -87,7 +92,7 @@ else:
     blocks = math.ceil(params * 8 / 1024**2 / 16)
 pad = params // blocks
 ```
-:blush:You may need to **adjust parameter 'block'** to replicate our results if you are **not using RTX 4090**!
+:blush:You may need to **adjust parameter 'block'** to replicate our results if you are **not using RTX 4090**! -->
 
 
 <!-- Citations -->
