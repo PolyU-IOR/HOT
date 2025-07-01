@@ -63,6 +63,8 @@ if __name__ == "__main__":
     img1_path = "./Dataset/Shapes/pic/6.png"
     img2_path = "./Dataset/Shapes/pic/8.png"
     
+    m = n = 256
+    
     b, c = generate_LP_param(img1_path, img2_path)
     
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'

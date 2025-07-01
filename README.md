@@ -49,8 +49,8 @@ First, install the necessary packages listed in requirements.txt. For the PyTorc
 The pipeline of this demo is like following: 
 <ol>
 <li>Specify the paths to the two images used for the OT problem.</li>
-<li>Specify the desired crop size of two images.</li>
-<li>Read the images, convert them to grayscale images, reisize and perform $\ell_{1}$ normalization.</li>
+<li>Specify the desired crop size $(m, n)$ of two images.</li>
+<li>Read the images, convert them to grayscale images, resize and perform $\ell_{1}$ normalization.</li>
 <li>Generate $b$ and $c$.</li>
 <li>Exucute the HOT Solver.</li>
 </ol>
