@@ -58,9 +58,9 @@ In most of the cases, you just need to slightly change the image paths and desir
 
 
 ## Results
-The HOT solver runs extremely **fast**! :smile:
+The HOT solver runs extremely <span style="color: red;">**fast**</span>! :smile:
 
-Apart from the speed, HOT enjoys an **advantage on memory** compared to most other baseline algorithms. :grin:
+Apart from the speed, HOT enjoys an <span style="color: red;">**advantage on memory**</span> compared to most other baseline algorithms. :grin:
 <img src="images/result.png" alt="drawing"> 
 
 
