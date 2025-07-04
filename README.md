@@ -109,6 +109,11 @@ pad = params // blocks
 ```
 
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=PolyU-IOR/HOT&type=Timeline)](https://www.star-history.com/#PolyU-IOR/HOT&Timeline)
+
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
